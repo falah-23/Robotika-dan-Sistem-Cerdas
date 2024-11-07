@@ -1,0 +1,35 @@
+Source the setup file of the rrt-ros to make the rrt-planning package visible to ros.
+
+source devel/setup.bash
+
+Run roscore in another terminal.
+
+roscore
+
+Then run rrt node as follows.
+
+rosrun rrt-planning rrt
+
+You will be now promped to run rviz for visualization. Then run Rviz in another terminal.
+
+rosrun rviz rviz
+
+Source the setup file of the Probabilistic-Roadmap to make the rrt-planning package visible to ros.
+
+source devel/setup.bash
+
+Run roscore in another terminal.
+
+roscore
+
+Then run rrt node as follows.
+
+rosrun rrt-planning prm
+
+You will be now promped to run rviz for visualization. Then run Rviz in another terminal.
+
+rviz
+
+You may also need to use:
+
+rosrun tf static_transform_publisher 0 0 0 0 0 0 1 map base_link 10
